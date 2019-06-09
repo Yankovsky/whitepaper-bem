@@ -5,7 +5,7 @@
   "main": "dist/whitepaper.css",
   "scripts": {
     "lint:css": "stylelint 'src/**/*.post.css'",
-    "build:css": "postcss index.css > dist/whitepaper.css",
+    "build:css": "postcss src/index.css > dist/whitepaper.css",
     "minify:css": "csso dist/whitepaper.css --output dist/whitepaper.min.css",
     "build": "npm run build:css && npm run minify:css",
     "prepublishOnly": "npm run build"
