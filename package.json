@@ -7,7 +7,7 @@
     "lint:css": "stylelint 'src/**/*.post.css'",
     "build:css": "postcss src/index.css > dist/whitepaper.css",
     "minify:css": "csso dist/whitepaper.css --output dist/whitepaper.min.css",
-    "build": "npm run build:css && npm run minify:css",
+    "build": "mkdir -p dist && npm run build:css && npm run minify:css",
     "prepublishOnly": "npm run build"
   },
   "repository": {
